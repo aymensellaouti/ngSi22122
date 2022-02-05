@@ -1,0 +1,13 @@
+<p>
+  Le contenu de two est : {{ two }}
+</p>
+
+<input
+  [(ngModel)]="two"
+  type="text" class="form-control">
+
+<button
+  (click)="changTwoVar()"
+  class="btn btn-primary">
+  change
+</button>
