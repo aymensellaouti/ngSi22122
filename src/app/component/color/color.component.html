@@ -1,0 +1,14 @@
+<div
+  [style.backgroundColor]="bgc"
+>color works!</div>
+
+<input
+  (change)="changeColor(colorInput.value)"
+  #colorInput
+  type="text" class="form-control">
+
+<button
+  (click)="changeColor(defaultColor)"
+  class="btn btn-danger">
+  Reset
+</button>
