@@ -7,7 +7,7 @@
             <img src="assets/images/rotating_card_thumb2.png">
           </div>
           <div class="user">
-            <img class="img-circle" src="assets/images/rotating_card_profile3.png">
+            <img class="img-circle" src="assets/images/{{path}}">
           </div>
           <div class="content">
             <div class="main">
@@ -64,10 +64,10 @@
     </div>
   </div>
   <div class="col">
-    name : <input type="text" class="form-control">
-    firstname : <input type="text" class="form-control">
-    path : <input type="text" class="form-control">
-    job : <input type="text" class="form-control">
+    name : <input type="text" class="form-control" [(ngModel)]="firstname">
+    firstname : <input type="text" class="form-control" [(ngModel)]="name">
+    path : <input type="text" class="form-control" [(ngModel)]="path">
+    job : <input type="text" class="form-control" [(ngModel)]="job">
   </div>
 </div>
 
