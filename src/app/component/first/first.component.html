@@ -1,0 +1,23 @@
+<p
+  (mouseenter)="changeColor('red')"
+  (mouseleave)="changeColor('yellow')"
+  [hidden]="isHidden"
+  [style.color]="color"
+>first works!
+  <input
+    #messageInput
+    type="text" class="form-control">
+
+CC c'est {{ name }} :)</p>
+<app-second></app-second>
+<p>
+  La valeur de mon input est {{ message }}
+</p>
+<img src="assets/images/cv.png" >
+<button
+  (click)="sayCc(messageInput.value)"
+  class="btn btn-primary">
+  cc
+</button>
+<!--attributs-->
+<!--evenements-->
