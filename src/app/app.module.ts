@@ -10,6 +10,10 @@ import {FormsModule} from "@angular/forms";
 import { TwoComponent } from './component/two/two.component';
 import { CardComponent } from './component/card/card.component';
 import { SommeComponent } from './component/somme/somme.component';
+import { CvComponent } from './cv/cv/cv.component';
+import { ListComponent } from './cv/list/list.component';
+import { ItemComponent } from './cv/item/item.component';
+import { DetailComponent } from './cv/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { SommeComponent } from './component/somme/somme.component';
     ColorComponent,
     TwoComponent,
     CardComponent,
-    SommeComponent
+    SommeComponent,
+    CvComponent,
+    ListComponent,
+    ItemComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
