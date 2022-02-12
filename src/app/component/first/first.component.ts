@@ -28,4 +28,7 @@ export class FirstComponent implements OnInit {
   changeColor(newColor: string) {
     this.color = newColor;
   }
+  processSonEvent(somme: number) {
+    alert(somme);
+  }
 }
