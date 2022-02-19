@@ -1,0 +1,28 @@
+<p
+  [ngStyle]="{
+    color: color,
+    fontFamily: font,
+    fontSize: size + 'px',
+    textAlign: align
+  }"
+
+>mini-word works!</p>
+
+<div class="row">
+  <div class="col"><input [(ngModel)]="color" type="color" class="form-control"></div>
+  <div class="col"><input [(ngModel)]="size" type="number" class="form-control"></div>
+  <div class="col">
+    <select class="form-control" [(ngModel)]="font">
+      <option value="garamond">garamond</option>
+      <option value="arial">arial</option>
+      <option value="verdana">verdana</option>
+    </select>
+  </div>
+
+  <div class="col">
+    <i (click)="aligner('left')" class="fa fa-align-left fa-3x p-2" aria-hidden="true"></i>
+    <i (click)="aligner('center')" class="fa fa-align-center fa-3x p-2" aria-hidden="true"></i>
+    <i (click)="aligner('right')" class="fa fa-align-right fa-3x p-2" aria-hidden="true"></i>
+    <i (click)="aligner('justify')" class="fa fa-align-justify fa-3x p-2" aria-hidden="true"></i>
+  </div>
+</div>

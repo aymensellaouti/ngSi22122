@@ -15,6 +15,9 @@ import { ListComponent } from './cv/list/list.component';
 import { ItemComponent } from './cv/item/item.component';
 import { DetailComponent } from './cv/detail/detail.component';
 import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
+import { MiniWordComponent } from './directives/mini-word/mini-word.component';
+import { NgclassComponent } from './directives/ngclass/ngclass.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
     ListComponent,
     ItemComponent,
     DetailComponent,
-    NgstyleComponent
+    NgstyleComponent,
+    MiniWordComponent,
+    NgclassComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
