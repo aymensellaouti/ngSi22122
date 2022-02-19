@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {Cv} from "../model/cv";
 
 @Component({
@@ -8,6 +8,7 @@ import {Cv} from "../model/cv";
 })
 export class ListComponent implements OnInit {
   cvs: Cv[] = [];
+  @Output() sendItemFromList = new EventEmitter<Cv>();
   constructor() { }
 
   ngOnInit(): void {
@@ -18,4 +19,7 @@ export class ListComponent implements OnInit {
     ];
   }
 
+  forwardItem(cv: Cv) {
+    this.sendItemFromList.emit(cv);
+  }
 }

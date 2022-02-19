@@ -1,11 +1,11 @@
 <ol class="list-group">
   <li class="list-group-item">
-    <app-item [cv]="cvs[0]"></app-item>
+    <app-item [cv]="cvs[0]" (selectItem)="forwardItem($event)"></app-item>
   </li>
   <li class="list-group-item">
-    <app-item [cv]="cvs[1]"></app-item>
+    <app-item [cv]="cvs[1]" (selectItem)="forwardItem($event)"></app-item>
   </li>
   <li class="list-group-item">
-    <app-item [cv]="cvs[2]"></app-item>
+    <app-item [cv]="cvs[2]" (selectItem)="forwardItem($event)"></app-item>
   </li>
 </ol>
