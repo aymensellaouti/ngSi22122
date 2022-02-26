@@ -14,8 +14,8 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
     this.cvs = [
       new Cv(1, 'sellaouti', 'aymen', 'Teacher', 'as.jpg', '1234', 39),
-      new Cv(2, 'sallouhi', 'henda', 'Teacher', 'rotating_card_profile.png', '12345', 20),
-      new Cv(2, 'Mekni', 'yassine', 'Ingénieur', 'rotating_card_profile3.png', '123456', 22),
+      new Cv(2, 'sallouhi', 'henda', 'Teacher', '', '12345', 20),
+      new Cv(2, 'Mekni', 'yassine', 'Ingénieur', '         ', '123456', 22),
     ];
   }
 
