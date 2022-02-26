@@ -1,3 +1,10 @@
+<input type="text" appRainbow>
+<p [hidden]="isAllume">
+  avec hidden
+</p>
+<p *ngIf="isAllume">
+  avec ngIf
+</p>
 <div
   (click)="interupteur()"
   [ngClass]="{
