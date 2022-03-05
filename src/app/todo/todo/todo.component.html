@@ -1,1 +1,24 @@
-<p>todo works!</p>
+<div class="row">
+  <div class="col">
+    <ol class="list-group">
+      <li
+        *ngFor="let todo of todos"
+        class="list-group-item">
+        {{todo.name}} : {{todo.content}}
+        <i class="bi bi-trash2"
+          (click)="deleteTodo(todo)"
+        ></i>
+      </li>
+    </ol>
+  </div>
+  <div class="col">
+    name : <input type="text" class="form-control" [(ngModel)]="todo.name">
+    content : <input type="text" class="form-control" [(ngModel)]="todo.content">
+    <button
+      (click)="addTodo()"
+      class="btn btn-success mt-2">
+      add
+    </button>
+  </div>
+</div>
+

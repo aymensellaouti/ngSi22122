@@ -5,11 +5,13 @@ import {Todo} from "../model/todo";
   providedIn: 'root'
 })
 export class TodoService {
-  todos: Todo[] = [];
+  private todos: Todo[] = [];
   constructor() { }
-  getTodos(): Todo[] {}
-  logTodos(): void {}
-  addTodo(todo: Todo):void {}
-  deleteTodo(todo: Todo): void {}
-
+  getTodos(): Todo[] {return this.todos;}
+  logTodos(): void {console.log(this.todos);}
+  addTodo(todo: Todo):void {this.todos.push(todo);}
+  deleteTodo(todo: Todo): void {
+    const index = this.todos.indexOf(todo);
+    this.todos.splice(index, 1);
+  }
 }
