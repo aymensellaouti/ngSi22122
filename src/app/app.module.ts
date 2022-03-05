@@ -21,10 +21,10 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { BtcToUsdPipe } from './pipes/btc-to-usd.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
-import {LoggerService} from "./services/logger.service";
 import { TodoComponent } from './todo/todo/todo.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr";
+import { EmbaucheComponent } from './cv/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +46,8 @@ import {ToastrModule} from "ngx-toastr";
     RainbowDirective,
     BtcToUsdPipe,
     DefaultImagePipe,
-    TodoComponent
+    TodoComponent,
+    EmbaucheComponent
   ],
   imports: [
     BrowserModule,
