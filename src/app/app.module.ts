@@ -29,6 +29,8 @@ import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './component/router-simulator/router-simulator.component';
 import { SayHelloComponent } from './component/say-hello/say-hello.component';
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
+import { Nf404Component } from './component/nf404/nf404.component';
+import { TestFormComponent } from './component/test-form/test-form.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
     HeaderComponent,
     RouterSimulatorComponent,
     SayHelloComponent,
-    DetailCvComponent
+    DetailCvComponent,
+    Nf404Component,
+    TestFormComponent
   ],
   imports: [
     BrowserModule,

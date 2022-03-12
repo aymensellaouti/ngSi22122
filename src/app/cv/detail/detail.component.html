@@ -53,7 +53,10 @@
       <div class="footer">
         <button
           (click)="embaucher()"
-          class="btn btn-primary">embaucher</button>
+          class="btn btn-primary m-1">embaucher</button>
+        <button
+          [routerLink]="['/cv', cv.id]"
+          class="btn btn-dark m-1">détails</button>
       </div>
     </div> <!-- end back panel -->
   </div> <!-- end card -->

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {Cv} from "../model/cv";
-
 @Injectable({
   providedIn: 'root'
 })
@@ -14,4 +13,15 @@ export class CvService {
     ];
   }
   getCvs(): Cv[] {return this.cvs;}
+  deleteCv(cv: Cv): boolean {
+    const index = this.cvs.indexOf(cv);
+    if (index > -1) {
+      this.cvs.splice(index, 1);
+      return true;
+    }
+    return false;
+  }
+  getCvById(id: number): Cv | null {
+    return this.cvs.find((cv) => cv.id == id) ?? null;
+  }
 }
