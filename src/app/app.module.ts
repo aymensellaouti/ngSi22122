@@ -31,6 +31,7 @@ import { SayHelloComponent } from './component/say-hello/say-hello.component';
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { Nf404Component } from './component/nf404/nf404.component';
 import { TestFormComponent } from './component/test-form/test-form.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { TestFormComponent } from './component/test-form/test-form.component';
     SayHelloComponent,
     DetailCvComponent,
     Nf404Component,
-    TestFormComponent
+    TestFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import {SayHelloComponent} from "./component/say-hello/say-hello.component";
 import {DetailCvComponent} from "./cv/detail-cv/detail-cv.component";
 import {SecondComponent} from "./component/second/second.component";
 import {Nf404Component} from "./component/nf404/nf404.component";
+import {LoginComponent} from "./auth/login/login.component";
 // cv
 const routes: Routes = [
   { path: '', component: FirstComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'todo', component: TodoComponent},
   { path: 'color', component: ColorComponent},
   { path: 'word', component: MiniWordComponent},
+  { path: 'login', component: LoginComponent},
   { path: ':id', component: SecondComponent},
   { path: 'hello/:name/:firstname', component: SayHelloComponent},
   { path: '**', component: Nf404Component},
