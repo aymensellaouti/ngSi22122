@@ -32,6 +32,7 @@ import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { Nf404Component } from './component/nf404/nf404.component';
 import { TestFormComponent } from './component/test-form/test-form.component';
 import { LoginComponent } from './auth/login/login.component';
+import { ObservableTestComponent } from './component/observable-test/observable-test.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { LoginComponent } from './auth/login/login.component';
     DetailCvComponent,
     Nf404Component,
     TestFormComponent,
-    LoginComponent
+    LoginComponent,
+    ObservableTestComponent
   ],
   imports: [
     BrowserModule,
