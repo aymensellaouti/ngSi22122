@@ -9,7 +9,7 @@ import {CvService} from "../services/cv.service";
 })
 export class ListComponent implements OnInit {
   cvs: Cv[] = [];
-  @Output() sendItemFromList = new EventEmitter<Cv>();
+  // @Output() sendItemFromList = new EventEmitter<Cv>();
   constructor(
     private cvService: CvService
   ) { }
@@ -18,7 +18,7 @@ export class ListComponent implements OnInit {
     this.cvs = this.cvService.getCvs();
   }
 
-  forwardItem(cv: Cv) {
-    this.sendItemFromList.emit(cv);
-  }
+  // forwardItem(cv: Cv) {
+  //   this.sendItemFromList.emit(cv);
+  // }
 }

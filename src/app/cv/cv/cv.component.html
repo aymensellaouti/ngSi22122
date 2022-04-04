@@ -5,10 +5,10 @@
 <!--      <p> {{ 2 | btcToUsd | currency }}</p>-->
 <!--      <p> {{ 2 | btcToUsd: false }}</p>-->
     </div>
-    <app-list (sendItemFromList)="getSelectedCv($event)"></app-list>
+    <app-list></app-list>
   </div>
   <div class="col">
-    <app-detail [cv]="selectedCv"></app-detail>
+    <app-detail></app-detail>
   </div>
 </div>
 <div class="row">

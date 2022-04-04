@@ -33,6 +33,7 @@ import { Nf404Component } from './component/nf404/nf404.component';
 import { TestFormComponent } from './component/test-form/test-form.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ObservableTestComponent } from './component/observable-test/observable-test.component';
+import { SliderComponent } from './component/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ObservableTestComponent } from './component/observable-test/observable-
     Nf404Component,
     TestFormComponent,
     LoginComponent,
-    ObservableTestComponent
+    ObservableTestComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

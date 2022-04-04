@@ -1,0 +1,21 @@
+<img
+  src="assets/images/{{path}}"
+  [ngStyle]="{
+    width: width + 'px',
+    heigth: heigth + 'px'
+  }"
+  [ngClass]="{
+    'rounded-circle': isRounded
+  }"
+>
+
+<img
+  src="assets/images/{{sliderObservable$ | async }}"
+  [ngStyle]="{
+    width: width + 'px',
+    heigth: heigth + 'px'
+  }"
+  [ngClass]="{
+    'rounded-circle': isRounded
+  }"
+>

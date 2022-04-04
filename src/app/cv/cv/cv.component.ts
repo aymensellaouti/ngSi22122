@@ -11,7 +11,7 @@ import {ToastrService} from "ngx-toastr";
   styleUrls: ['./cv.component.css']
 })
 export class CvComponent implements OnInit {
-  selectedCv : Cv | null = null;
+  // selectedCv : Cv | null = null;
   date = new Date();
   // helloService = new SayHelloService();
   constructor(
@@ -25,10 +25,10 @@ export class CvComponent implements OnInit {
     this.helloService.hello();
     this.toaster.info('Bienvenu');
   }
-  getSelectedCv(cv: Cv) {
-    if (cv) {
-      this.selectedCv = cv;
-    }
-    this.todoService.logTodos();
-  }
+  // getSelectedCv(cv: Cv) {
+  //   if (cv) {
+  //     this.selectedCv = cv;
+  //   }
+  //   this.todoService.logTodos();
+  // }
 }
