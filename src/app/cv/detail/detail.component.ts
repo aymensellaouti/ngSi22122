@@ -4,6 +4,7 @@ import {EmbaucheService} from "../services/embauche.service";
 import {ToastrService} from "ngx-toastr";
 import {CvService} from "../services/cv.service";
 import {Observable} from "rxjs";
+import {distinctUntilChanged} from "rxjs/operators";
 
 @Component({
   selector: 'app-detail',
@@ -23,7 +24,9 @@ export class DetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.cvService.selectItemObservable$.subscribe(
+    this.cvService.selectItemObservable$
+      .pipe(distinctUntilChanged())
+      .subscribe(
       (cv) => {this.cv = cv;}
     )
   }
