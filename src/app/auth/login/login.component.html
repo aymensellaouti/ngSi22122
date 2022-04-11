@@ -36,6 +36,7 @@
     </div>
   </div>
   <button
+    (click)="login(loginForm)"
     [disabled]="loginForm.invalid"
     type="submit" class="btn btn-primary mt-2">Submit</button>
 </form>
