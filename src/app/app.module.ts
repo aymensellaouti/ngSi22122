@@ -36,6 +36,7 @@ import { ObservableTestComponent } from './component/observable-test/observable-
 import { SliderComponent } from './component/slider/slider.component';
 import {HttpClientModule} from "@angular/common/http";
 import { TestHttpComponent } from './component/test-http/test-http.component';
+import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { TestHttpComponent } from './component/test-http/test-http.component';
     LoginComponent,
     ObservableTestComponent,
     SliderComponent,
-    TestHttpComponent
+    TestHttpComponent,
+    AddPersonneComponent
   ],
   imports: [
     BrowserModule,

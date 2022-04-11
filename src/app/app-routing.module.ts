@@ -10,10 +10,13 @@ import {DetailCvComponent} from "./cv/detail-cv/detail-cv.component";
 import {SecondComponent} from "./component/second/second.component";
 import {Nf404Component} from "./component/nf404/nf404.component";
 import {LoginComponent} from "./auth/login/login.component";
+import {AddPersonneComponent} from "./cv/add-personne/add-personne.component";
+import {AuthGuard} from "./auth/guards/auth.guard";
 // cv
 const routes: Routes = [
   { path: '', component: FirstComponent},
   { path: 'cv', component: CvComponent},
+  { path: 'cv/add', component: AddPersonneComponent, canActivate: [AuthGuard]},
   { path: 'cv/:id', component: DetailCvComponent},
   { path: 'todo', component: TodoComponent},
   { path: 'color', component: ColorComponent},

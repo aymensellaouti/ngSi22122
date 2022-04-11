@@ -1,3 +1,4 @@
 export const ROUTES = {
-  'cv' : 'cv'
+  'cv' : 'cv',
+  'login' : 'login',
 }
