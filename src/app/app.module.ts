@@ -37,6 +37,7 @@ import { SliderComponent } from './component/slider/slider.component';
 import {HttpClientModule} from "@angular/common/http";
 import { TestHttpComponent } from './component/test-http/test-http.component';
 import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
+import {AUTH_INTERCEPTOR_PROVIDER} from "./auth/interceptor/auth.interceptor";
 
 @NgModule({
   declarations: [
@@ -80,7 +81,7 @@ import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
     ToastrModule.forRoot(), // ToastrModule added
     HttpClientModule
   ],
-  providers: [],
+  providers: [AUTH_INTERCEPTOR_PROVIDER],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
