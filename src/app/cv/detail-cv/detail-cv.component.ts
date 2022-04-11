@@ -25,10 +25,14 @@ export class DetailCvComponent implements OnInit {
     // L'id on va le récupérer dans la route
     this.activatedRoute.params.subscribe(
       (param) => {
-        this.cv = this.cvService.getCvById(param['id']);
-        if (!this.cv) {
-          this.router.navigate([ROUTES.cv]);
-        }
+        this.cvService.getCvById(param['id']).subscribe({
+          next: (cv) => {
+            this.cv = cv;
+          },
+          error: (error) => {
+            this.router.navigate([ROUTES.cv]);
+          }
+        });
       }
     )
   }
